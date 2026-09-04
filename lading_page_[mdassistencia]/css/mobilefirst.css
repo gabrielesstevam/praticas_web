@@ -1,0 +1,458 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@font-face {
+    src: url(../fonts/American\ Captain.otf) format("opentype"), url("../fonts/American\ Captain.ttf") format("truetype");
+    font-family: "American";
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    src: url(../fonts/LEMONMILK-Bold.otf) format("truetype");
+    font-family: "Titulos";
+}
+@font-face {
+    src: url(../fonts/LEMONMILK-Light.otf) format("truetype");
+    font-family: "Textos";
+}
+:root{
+    --navegação: #2A80D8;
+    --aba-navegação: #6AB1E8;
+    --secundario-fundo: #529DDE;
+    --terceiro-fundo: #bce0fb;
+    --fundo-main: #186CC3;
+    --texto-icone-fundo: #ffffff;
+    --footer: #003A76;
+    --transparência: #ffffff00;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+}
+main{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: 5px 1fr 5px;
+    /* border: 2px dashed yellow; */
+}
+section{
+    border-radius: 10px;
+    /* border: 1px dashed red; */
+ }
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 55px;
+ }
+/*======================*/
+/*== NAVEGAÇÃO ======================*/
+nav{
+    position: sticky;
+    top: 0;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    background-color: var(--navegação);
+    color: var(--texto-icone-fundo);
+    padding: 15px;
+    height: 50px;
+    width: 100%;
+    font-size: 1.25em;
+}
+nav a.icone{
+    color: var(--texto-icone-fundo);
+    padding: 5px;
+    border-radius: 50%;
+    
+    transition: 0.2s;
+}
+nav a:hover{
+    color: var(--footer);
+}
+nav span ul.icones a:hover{
+    color: var(--footer);
+}
+nav span ul.icones{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    gap: 20px;
+
+    padding: 20px 10px;
+    border-radius: 40px;
+    background-color: var(--aba-navegação);
+    list-style-type: none;
+
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: 0.2s;
+}
+nav span:hover ul.icones{
+    visibility: visible;
+    opacity: 100;
+    transform: translateY(0);
+}
+nav .media-icones{
+    display: none;
+}
+nav ul.icones a{
+    color: var(--texto-icone-fundo);
+    transition: 0.3s;
+}
+/*======================*/
+/*== INICIO ====================*/
+body{
+    height: 100%;
+    background-color: var(--fundo-main);
+
+}
+#inicial{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    grid-column: 2;
+
+    
+    margin-top: 15px;
+    margin-bottom: 15px;
+    min-height: 250px;
+    background-image: radial-gradient(var(--aba-navegação), var(--fundo-main) 70%);
+}
+#inicial .one{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;;
+
+    text-align: center;
+    border-bottom: 1px solid var(--texto-icone-fundo);
+}
+#inicial .one p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 0.5em;
+    font-weight: bolder;
+    color: var(--texto-icone-fundo);
+}
+#inicial .two{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    color: var(--texto-icone-fundo);
+    text-align: center;
+}
+#inicial .two h2{
+    margin-top: 15px;
+    font-size: 1.6em;
+    letter-spacing: 5px;
+    font-weight: bolder;
+    font-family: "Poppins", sans-serif;
+}
+#inicial .two p.cargo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    font-weight: bolder;
+    padding: 5px 10px;
+    border-radius: 8px;
+    width: fit-content;
+    font-size: 0.8em;
+    background-color: var(--aba-navegação);
+    transition: 0.3s;
+}
+#inicial .two p.cargo:hover{
+    background-color: #003A76;
+    border: 1px solid var(--aba-navegação);
+}
+#inicial .two .sobre{
+    font-size: 0.8em;
+    text-align: justify;
+    margin: 10px;
+}
+/*======================*/
+/*== MEUS ATENDIMENTOS ====================*/
+#atendimentos {
+    grid-column: 2;
+    background-color: var(--texto-icone-fundo);
+    color: var(--fundo-main);
+    padding: 10px;
+}
+#atendimentos h2{
+    background-image: linear-gradient(to right, var(--terceiro-fundo), var(--transparência));
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-family: "Poppins", sans-serif;;
+}
+#atendimentos .segundo-atendimento h2{
+    margin-bottom: 10px;
+}
+#atendimentos .infos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    font-size: 0.9em;
+    margin-top: 10px;
+    font-weight: bolder;
+}
+#atendimentos .adicionais{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    background-image: linear-gradient(to right, var(--terceiro-fundo), var(--transparência));
+    padding: 5px 5px;
+    border-radius: 10px;
+}
+#atendimentos .locais{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    list-style-type: none;
+    text-align: center;
+    font-size: 0.9em;
+}
+#atendimentos .locais li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--fundo-main);
+    color: var(--texto-icone-fundo);
+    padding: 10px 10px;
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+#atendimentos .locais li:hover{
+    background-color: var(--terceiro-fundo);
+    color: var(--fundo-main);
+    border: 1px solid var(--fundo-main);
+}
+#atendimentos .formulario{
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+
+    font-size: 0.7em;
+}
+#atendimentos label{
+    display: flex;
+    gap: 5px;
+
+    border: 1px solid var(--fundo-main);
+    border-radius: 20px;
+    padding: 15px;
+    width: 100%;
+    font-weight: bolder;
+    font-family: "Poppins", sans-serif;
+}
+#atendimentos input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+#atendimentos input, textarea{
+    color: var(--aba-navegação);
+    width: 100%;
+    margin-right: 10px;
+    border: none;
+}
+#atendimentos .labeli{
+    align-items: center;
+    justify-content: flex-start;
+}
+#atendimentos .label textarea{
+    width: 99%;
+    height: 100px;
+    resize: vertical;
+}
+#atendimentos input, textarea{
+    caret-color: var(--fundo-main);
+}
+#atendimentos input::placeholder, textarea::placeholder{
+    font-size: 0.8em;
+    color: var(--terceiro-fundo);
+}
+#atendimentos input:focus-within, textarea:focus-within{
+    outline: none;
+}
+#atendimentos label:focus-within{
+    border: 2px solid var(--fundo-main);
+}
+#atendimentos input[type="submit"]{
+    background-color: var(--fundo-main);
+    color: var(--texto-icone-fundo);
+    padding: 10px;
+    border-radius: 30px;
+    font-weight: bolder;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    transition: 0.3s;
+}
+#atendimentos input[type="submit"]:hover{
+    background-color: var(--terceiro-fundo);
+    color: var(--fundo-main);
+    border: 1px solid var(--fundo-main);
+}
+#atendimentos .link{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-size: 2.5em;
+
+    text-decoration: none;
+    width: fit-content;
+    overflow: hidden;
+    color: var(--fundo-main);
+    padding: 5px;
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+#atendimentos .link p{
+    display: none;
+    font-size: 0.4em;
+}
+#atendimentos .link:hover{
+    background-color: var(--fundo-main);
+    color: var(--terceiro-fundo);
+}
+#atendimentos .link:hover p{
+    display: inline;
+}
+#segundo-atendimento{
+    display: none;
+}
+/*======================*/
+/*== EU DOU UM JEITO ====================*/
+#problemas-section{
+    grid-column: 2;
+
+    margin-top: 10px;
+    color: var(--fundo-main);
+    background-color: var(--texto-icone-fundo);
+    padding: 10px;
+}
+#problemas-section h2{
+    font-size: 1.2em;
+    background-image: linear-gradient(to right, var(--terceiro-fundo), var(--transparência));
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+}
+#problemas-section ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+
+    font-size: 0.9em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    list-style-type: none;
+    text-align: center;
+}
+#problemas-section li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--fundo-main);
+    color: var(--texto-icone-fundo);
+    padding: 10px 5px;
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+#problemas-section .marcas li{
+    background-color: var(--aba-navegação);
+}
+#problemas-section .marcas li:hover{
+    color: var(--fundo-main);
+    background-color: var(--terceiro-fundo);
+    border: 1px solid var(--fundo-main);
+}
+#problemas-section .problemas li:hover{
+    color: var(--fundo-main);
+    background-color: var(--terceiro-fundo);
+    border: 1px solid var(--fundo-main);
+}
+/*======================*/
+/*== FAQ ====================*/
+#perguntas {
+    grid-column: 2;
+
+    margin: 10px 0px;
+    background-color: var(--texto-icone-fundo);
+    color: var(--fundo-main);
+    padding: 10px;
+}
+#perguntas h2{
+    font-size: 1.2em;
+    background-image: linear-gradient(to right, var(--terceiro-fundo), var(--transparência));
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+}
+#perguntas div{
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    
+    margin-top: 10px;
+}
+#perguntas details {
+    font-size: 0.9em;
+    color: white;
+    background-color: var(--fundo-main);
+    padding: 5px 15px;
+    border-radius: 8px;
+}
+#perguntas details .resposta{
+    background-color: var(--texto-icone-fundo);
+    border-radius: 8px;
+    margin: 10px 0px 0px 0px;
+    color: var(--secundario-fundo);
+    padding: 5px;
+    font-size: 0.8em;
+}
+footer {
+    text-align: center;
+    padding: 5px;
+    font-size: 1em;
+    background-color: var(--aba-navegação);
+    color: var(--texto-icone-fundo);
+    font-family: Titulos;
+    font-size: 0.8em;
+}
+footer a{
+    color: var(--texto-icone-fundo);
+    text-decoration: none;
+    font-weight: bolder;
+}
+/*== MEDIA-QUERIES ==================== */
+/*== MEDIA-QUERIES LOCAIS DE ATENDIMENTO ==================== */
+@media screen and (max-width: 320px) {
+    .atendimentos .locais li{
+        width: 90%;
+        text-align: center;
+        padding: 5px 0px;
+    }
+}

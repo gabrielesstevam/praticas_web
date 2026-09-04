@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anotações</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9215fe2f52.js" crossorigin="anonymous"></script> <!--link para utilizar icones fontawesome-->
+</head>
+<body>
+    <div id="main_content"> <!--conteúdo principal [z-index -]-->
+        <header>
+            <h1>
+                <i class="fa-solid fa-chevron-left"></i>
+                Anotações <!--título da página-->
+                <i class="fa-solid fa-chevron-right"></i>
+            </h1>
+            <button id="newNote"><i class="fa-solid fa-plus"></i></button> <!--botão para criar nova anotação-->
+            <button id="reset"><i class="fa-solid fa-rotate"></i></button> <!--botaão para resetar o localstorage-->
+        </header>
+        <main>
+            <section id="listAnnotation"> <!--container de cards de anotações-->
+                <!--Cards Serão criados-->
+            </section>
+        </main>
+    </div>
+    <div id="modal_container"> <!--modal background [z-index +]-->
+    </div>
+    <div id="modal_novaNota"> <!--modal para criar nova nota [z-index ++]-->
+        <p>
+            <span class="form">
+                <label for="ititulo">Título: </label>
+                <input type="text" name="titulo" id="ititulo" placeholder="Digite o título da anotação">
+                <!--informar título-->
+            </span>
+            <span class="buttons">
+                <button id="backNote" class="button voltar">
+                    <i class="fa-solid fa-file-circle-minus"></i>
+                    <!--botão para apagar o conteúdo escrito-->
+                </button>
+                <button id="saveNote" class="button salvar">
+                    <i class="fa-solid fa-floppy-disk"></i>
+                    <!--botão para salvar-->
+                </button>
+                <button id="cancelNote" class="button cancelar">
+                    <i class="fa-solid fa-x"></i>
+                    <!--botão para cancelar e voltar para a página principal-->
+                </button>
+            </span>
+        </p>
+        <textarea name="annotation" id="iannotation" placeholder="Digite o conteúdo"></textarea> 
+    </div>
+    <div id="modal_save"> <!--interface de resposta de salvamento [z-index ++]-->
+        Salvo <!--Mensagem-->
+    </div>
+    <div id="modal_read"> <!--modal para leitura completa do [z-index ++]-->
+        <p class ="id">ID: 132488361</p>
+        <p class ="criadoEm">Criado em: 2024/12/01</p>
+        <h2>Título</h2>
+        <p class ="textfull">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        <button class ="sair button"><i class="fa-solid fa-x"></i></button>
+    </div>
+    <script src="script.js"></script> <!--link JavaScript-->
+</body>
+</html>

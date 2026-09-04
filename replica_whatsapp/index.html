@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- CSS -->
+    <script src="https://kit.fontawesome.com/9215fe2f52.js" crossorigin="anonymous"></script> <!-- Acesso de Icones -->
+    <link rel="shortcut icon" href="images/favicon_whatsapp.ico" type="image/x-icon"> <!-- Favicon -->
+</head>
+<body>
+    <main id="viewport">
+        <div class="menu"> <!-- MENU LATERAL -->
+            <ul class="menu_itens">
+                <li class="initial">
+                    <i class="fa-solid fa-message"></i>
+                    <span>Conversas</span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-photo-film story"></i>
+                    <span>Status</span></li>
+                <li>
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <span>Canais</span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-arrows-down-to-people"></i>
+                    <span>Comunidades</span>
+                </li>
+                <hr>
+                <li>
+                    <i class="fa-brands fa-meta meta_ai"></i>
+                    <span>Meta Ai</span>
+                </li>
+            </ul>
+            <ul class="menu_config">
+                <li>
+                    <i class="fa-solid fa-images midia"></i>
+                    <span>Mídia</span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-circle-user conta"></i>
+                    <span>Você</span>
+                </li>
+            </ul>
+        </div>
+        <div class="acesso">
+            <div class="title">
+                <h1>WhatsApp</h1>
+                <ul>
+                    <li tabindex="0"><i class="fa-solid fa-comment-medical"></i></li>
+                    <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                </ul>
+            </div>
+            <form action="cadastro.php" method="post">
+                <label for="isearch"><i class="fa-solid fa-magnifying-glass"></i><input type="text" name="search" id="isearch" placeholder="Pesquisar ou começar uma nova conversa"></label>
+            </form>
+            <div class="filtros">
+                <ul>
+                    <li><a href="#">Tudo</a></li>
+                    <li><a href="#">Favoritas</a></li>
+                    <li><a href="#">Grupos</a></li>
+                    <li><a href="#"><i class="fa-solid fa-plus"></i></a></li>
+                </ul>
+            </div>
+            <div class="abas">
+                <div class="division">
+                    <div class="conteudo">
+                        <i class="fa-solid fa-lock"></i>
+                        <p>Conversas trancadas</p>
+                    </div>
+                    <div class="conteudo">
+                        <i class="fa-solid fa-box-archive"></i>
+                        <p>Arquivadas</p>
+                    </div>
+                    <div class="conteudo mensagens">
+                        <div class="perfil">
+                            <img src="images/perfil01.jpg" alt="perfil 01">
+                        </div>
+                        <div class="info">
+                            <div class="info_name">
+                                <h2>Pessoa 01</h2>
+                                <div class="mensagem">
+                                    <i class="fa-solid fa-check checked"></i>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt, itaque! Maiores nesciunt culpa officia eum tenetur placeat consectetur quis nobis ipsam? Laudantium libero excepturi quibusdam! Fuga nulla culpa magni impedit.</p>
+                                </div>
+                            </div>
+                            <div class="info_data">
+                                <p>06:18</p>
+                                <span><i class="fa-solid fa-thumbtack fixed"></i><i class="fa-solid fa-caret-down menu-left"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="conteudo mensagens">
+                        <div class="perfil">
+                            <img src="images/perfil02.jpg" alt="perfil 01">
+                        </div>
+                        <div class="info">
+                            <div class="info_name">
+                                <h2>Pessoa 02</h2>
+                                <div class="mensagem">
+                                    <i class="fa-solid fa-check checked"></i>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem fuga exercitationem magni quibusdam atque itaque quisquam! Ipsa modi consequuntur, quae ducimus sunt facilis magni, aperiam laudantium, pariatur ad nesciunt eius.</p>
+                                </div>
+                            </div>
+                            <div class="info_data">
+                                <p>19:53</p>
+                                <span><i class="fa-solid fa-thumbtack fixed"></i><i class="fa-solid fa-caret-down menu-left"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <hr>
+                        <p><i class="fa-solid fa-lock lock_icon"></i>Suas mensagens pessoais são protegidas com a <span>criptografia de ponta a ponta</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="principal">
+            <div class="conteudo">
+                <div class="download">
+                    <img src="images/pc.png" alt="imagem de computador">
+                    <h2>Baixar o WhatsApp para Windows</h2>
+                    <p>Tenha acesso a recursos extras, como ligações de voz e de víde, compartilhamento de tela e muito mais.</p>
+                    <a href="https://www.whatsapp.com/download?lang=pt">Baixar</a>
+                </div>
+                <div class="cards">
+                    <div>
+                        <i class="fa-solid fa-file icone"></i>
+                        <p>Enviar Documento</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-user-plus icone"></i>
+                        <p>Adicionar Contato</p>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-meta meta_ai icone"></i>
+                        <p>Perguntar à Meta AI</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
