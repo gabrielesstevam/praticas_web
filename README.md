@@ -1,9 +1,6 @@
-# Práticas de Front-End
+<h1 align=center>Práticas de Front-End</h1>
 
-Neste repositório eu guardo todos os exercícios e práticas relevantes para a área Front-End da web, com o objetivo de visualizar melhor minha evolução e demonstrar na prática meu conhecimento.
+> <h2>Sobre</h2>
+Neste repositório, guardo todos os meus exercícios e práticas relevantes para o desenvolvimento web, com o objetivo de acompanhar melhor minha evolução e demonstrar, na prática, meus conhecimentos.
 
-## Tecnologias utilizadas
-- HTML5
-- CSS3
-- JavaScript
-
+Para ser mais concreto, decidi reunir aqui projetos que não são bons o suficiente para se destacarem em um repositório próprio, mas que ainda assim tiveram um papel importante no meu aprendizado e contribuíram para o meu desenvolvimento como programador.
